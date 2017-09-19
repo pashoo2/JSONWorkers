@@ -1,0 +1,10 @@
+{
+  "name": "JSONWorkers",
+  "version": "0.0.1",
+  "main": "json.async",
+  "author": "https://github.com/pashoo2",
+  "keywords": ["json", "async", "webworkers", "json async", "json webworkers", "compress"],
+  "dependencies": {
+    "pako" : "~1.0.3"
+  }
+}
