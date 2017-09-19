@@ -3,10 +3,19 @@ JSONWorkers
 
  
 
+>   With webpack-like just use* import \* from “JSONWorkers”*.
+
+>   With native code use *import \* from “./node_modules/JSONWorker/index.js”*
+>   or *\<script src=“./node_modules/JSONWorker/index.js”\>*
+
+**!Does not work with nodejs**
+
+ 
+
 **Set the following global JSON API methods:**
 
-1.  JSON.parseAsync(JSON.parseSync) (str, callback, context, flCompression) -
-    parse a given string async/sync with/without a zlib compression
+1.  **JSON.parseAsync**(JSON.parseSync) (str, callback, context, flCompression)
+    - parse a given string async/sync with/without a zlib compression
 
     -   str{string} string to parse
 
@@ -16,9 +25,9 @@ JSONWorkers
         callback.call(context, result)
 
     -   flCompression {boolean} if true, then decompress a string compressed
-        with [pako ](https://github.com/nodeca/pako)library or
+        with [pako](https://github.com/nodeca/pako)library or
 
-2.  JSON.stringifyAsync(JSON.stringifySync) (obj, callback, context,
+2.  **JSON.stringifyAsync(**JSON.stringifySync) (obj, callback, context,
     flCompression) - stringify a given object async/sync with/without a zlib
     compression
 
